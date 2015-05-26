@@ -2,7 +2,7 @@
 
 Once applied to your website, the Open Knowledge Foundation Ribbon will look like this:
 
-![Screenshot](//okfnlabs.org/ok-panel/screenshot.png)
+![Screenshot](http://okfnlabs.org/ok-panel/screenshot.png)
 
 ##Usage
 

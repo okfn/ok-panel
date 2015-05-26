@@ -48,5 +48,5 @@ This will add the ribbon into the flow of the document. First add the following 
 Then add this where you want the ribbon to appear (should be near the top of the page):
 
 ```html
-<a class="white ok-ribbon" href="https://okfn.org/"><img src="//okfnlabs.org/ok-panel/assets/images/ok-ribbon.png" alt="Open Knowledge"></a>
+<a class="ok-ribbon" href="https://okfn.org/"><img src="//okfnlabs.org/ok-panel/assets/images/ok-ribbon.png" alt="Open Knowledge"></a>
 ```

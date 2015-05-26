@@ -50,3 +50,16 @@ Then add this where you want the ribbon to appear (should be near the top of the
 ```html
 <a class="ok-ribbon" href="https://okfn.org/"><img src="//okfnlabs.org/ok-panel/assets/images/ok-ribbon.png" alt="Open Knowledge"></a>
 ```
+
+#### Colour Options
+With the above, default implementation, the ribbon will be green. There are also black and white options. For white on black as `black` to the `ok-ribbon` class, like so:
+
+```html
+<a class="black ok-ribbon" href="https://okfn.org/"><img src="//okfnlabs.org/ok-panel/assets/images/ok-ribbon.png" alt="Open Knowledge"></a>
+```
+
+and for black on white, add `white`:
+
+```html
+<a class="white ok-ribbon" href="https://okfn.org/"><img src="//okfnlabs.org/ok-panel/assets/images/ok-ribbon.png" alt="Open Knowledge"></a>
+```

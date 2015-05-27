@@ -28,7 +28,7 @@ Add the below JavaScript:
 
 Lastly, there is the HTML. Where and how you add this depends slightly on your website, but the are two basic options.
 
-#### Fixed Position (TODO)
+#### Fixed Position
 
 This is probably the most straightforward method, just add the following snippet immediately after the opening `<body>` tag:
 

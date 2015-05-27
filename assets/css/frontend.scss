@@ -105,6 +105,29 @@
       top:-4px;
     }
   }
+  
+  .fixed-ok-panel,
+  .absolute-ok-panel {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+    
+    .ok-ribbon {
+      top:auto;
+      margin-top:-4px;
+      
+      &:hover {
+        margin-top:-2px;
+      }
+      &.open {
+        margin-top:-4px;
+      }
+    }
+  }
+  .absolute-ok-panel {
+    position: absolute;
+  }
 }
 
 

@@ -4,7 +4,7 @@ jQuery( document ).ready( function ( e ) {
     
     $('a.ok-ribbon').click(function(e) {
         $(this).toggleClass("closed open");
-        $('body > #ok-panel').toggleClass("closed open");
+        $('#ok-panel').toggleClass("closed open");
     });
   }
 });

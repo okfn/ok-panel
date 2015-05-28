@@ -1,4 +1,4 @@
-jQuery( document ).ready( function ( e ) {
+jQuery(document).ready(function($) {
   if ( $(document).width() > 560) { 
     $( "a.ok-ribbon" ).addClass( "closed" ).removeAttr('href');
     

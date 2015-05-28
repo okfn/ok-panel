@@ -1,8 +1,15 @@
 <?php
-
+  $okfpanel_colour = $okfpanel->get_option( 'colour' );
+  
   // Main html
 	$okfpanel_iframe = '<div id="ok-panel" class="closed"><iframe src="//assets.okfn.org/themes/okfn/okf-panel.html" scrolling="no"></iframe></div>';
-  $okfpanel_ribbon = '<a class="ok-ribbon" href="https://okfn.org/"><img src="//okfnlabs.org/ok-panel/assets/images/ok-ribbon.png" alt="Open Knowledge"></a>';
+  $okfpanel_ribbon = '<a class="';
+  if ($okfpanel_colour == 'black') :
+    $okfpanel_ribbon .= 'black ';
+  elseif ($okfpanel_colour == 'white') :
+    $okfpanel_ribbon .= 'white ';
+  endif;
+  $okfpanel_ribbon .= 'ok-ribbon" href="https://okfn.org/"><img src="//okfnlabs.org/ok-panel/assets/images/ok-ribbon.png" alt="Open Knowledge"></a>';
 
   // Relative panel
 	function show_okfpanel() {

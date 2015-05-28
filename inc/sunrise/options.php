@@ -19,6 +19,18 @@
 			'id' => 'position',
 			'type' => 'radio'
 		),
+    array(
+			'name' => __( 'Colour', $this->textdomain ),
+			//'desc' => __( 'Colour of the tab', $this->textdomain ),
+			'options' => array(
+				'green' => __( 'Green', $this->textdomain ),
+				'black' => __( 'Black', $this->textdomain ),
+				'white' => __( 'White', $this->textdomain )
+			),
+			'std' => 'green',
+			'id' => 'colour',
+			'type' => 'radio'
+		),
 		/*
 		array(
 			'name' => __( 'Ribbon Colour', $this->textdomain ),

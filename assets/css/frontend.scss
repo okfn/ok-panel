@@ -17,7 +17,7 @@
 @media only screen and (min-width : 576px) {
 
   .ok-ribbon {
-    position:absolute;
+    position:relative;
     top:-6px;
     right:10px;
     width:161px;
@@ -116,6 +116,7 @@
     .ok-ribbon {
       top:auto;
       margin-top:-4px;
+      position:absolute;
       
       &:hover {
         margin-top:-2px;

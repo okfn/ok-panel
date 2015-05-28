@@ -10,7 +10,7 @@ See http://okfnlabs.org/ok-panel
 
 ## Wordpress
 
-TODO
+Wordpress plugin available [here](https://github.com/okfn/ok-panel/tree/wordpress).
 
 ## Developers
 

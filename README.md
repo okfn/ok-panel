@@ -23,4 +23,5 @@ Both branches have the `assets` folder in common.
 ### Assets
 
 **CSS** should be written in `css/frontend.scss` and compiled to `css/fontend.css`.
+
 **JS** should be written in `js/frontend.js` and minified to `js/frontend.min.js`.

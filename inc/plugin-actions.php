@@ -1,0 +1,42 @@
+<?php
+
+  // Main html
+	$okfpanel_iframe = '<div id="ok-panel" class="closed"><iframe src="//assets.okfn.org/themes/okfn/okf-panel.html" scrolling="no"></iframe></div>';
+  $okfpanel_ribbon = '<a class="ok-ribbon" href="https://okfn.org/"><img src="//okfnlabs.org/ok-panel/assets/images/ok-ribbon.png" alt="Open Knowledge"></a>';
+
+  // Relative panel
+	function show_okfpanel() {
+		echo $GLOBALS['okfpanel_iframe'];
+	}
+	function show_okfribbon() {
+		echo $GLOBALS['okfpanel_ribbon'];
+	}
+
+	// Absolute panel
+	function show_okfpanel_absolute() {
+		echo '<div class="absolute-ok-panel">'.$GLOBALS['okfpanel_iframe'].'<div class="container">'.$GLOBALS['okfpanel_ribbon'].'</div></div>';
+	}
+	
+	// Fixed panel
+	function show_okfpanel_fixed() {
+		echo '<div class="fixed-ok-panel">'.$GLOBALS['okfpanel_iframe'].'<div class="container">'.$GLOBALS['okfpanel_ribbon'].'</div></div>';
+	}
+	
+		
+	// Get and print option values
+	$okfpanel_position = $okfpanel->get_option( 'position' );
+	
+	
+	// Show panel
+	if ($okfpanel_position == 'relative') {
+	  add_action ( 'ok_panel', 'show_okfpanel' );
+		add_action ( 'ok_ribbon', 'show_okfribbon' );
+	}
+	else if ($okfpanel_position == 'fixed') {
+		add_action ( 'wp_footer', 'show_okfpanel_fixed' );
+	}
+	else {
+	  add_action ( 'wp_footer', 'show_okfpanel_absolute' );
+	}
+	
+?>

@@ -1,47 +1,33 @@
 <?php
 /*
- * Plugin Name: ok-panel
- * Version: 1.0
- * Plugin URI: http://www.hughlashbrooke.com/
- * Description: This is your starter template for your next WordPress plugin.
- * Author: Hugh Lashbrooke
- * Author URI: http://www.hughlashbrooke.com/
- * Requires at least: 4.0
- * Tested up to: 4.0
- *
- * Text Domain: ok-panel
- * Domain Path: /lang/
- *
- * @package WordPress
- * @author Hugh Lashbrooke
- * @since 1.0.0
- */
+	  Plugin Name: Open Knowledge Panel
+	  Plugin URI: https://github.com/okfn/ok-panel
+	  Version: 2.0.0
+	  Author: Mint Canary
+	  Author URI: http://www.mintcanary.com/
+	  Description: Adds ribbon and dropdown panel to top of site.
+	  Text Domain: okf-panel
+	  Domain Path: /languages
+	  License: GNU GENERAL PUBLIC LICENSE
+	 */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+	// Include Sunrise Plugin Framework class
+	require_once 'classes/sunrise.class.php';
 
-// Load plugin class files
-require_once( 'includes/class-ok-panel.php' );
-require_once( 'includes/class-ok-panel-settings.php' );
+	// Create plugin instance
+	$okfpanel = new Sunrise_Plugin_Framework;
 
-// Load plugin libraries
-require_once( 'includes/lib/class-ok-panel-admin-api.php' );
-require_once( 'includes/lib/class-ok-panel-post-type.php' );
-require_once( 'includes/lib/class-ok-panel-taxonomy.php' );
+	$okfpanel->add_settings_page( array(
+		'parent' => 'themes.php',
+		'page_title' => $okfpanel->name,
+		'menu_title' => 'OK Panel',
+		'capability' => 'manage_options',
+		'settings_link' => true
+	) );
 
-/**
- * Returns the main instance of ok-panel to prevent the need to use globals.
- *
- * @since  1.0.0
- * @return object ok-panel
- */
-function ok-panel () {
-	$instance = ok-panel::instance( __FILE__, '1.0.0' );
+	// Include plugin actions
+	require_once 'inc/plugin-actions.php';
 
-	if ( is_null( $instance->settings ) ) {
-		$instance->settings = ok-panel_Settings::instance( $instance );
-	}
-
-	return $instance;
-}
-
-ok-panel();
+	// Make plugin meta translatable
+	__( 'Adds ribbon and dropdown panel to top of site', $okfpanel->textdomain );
+?>

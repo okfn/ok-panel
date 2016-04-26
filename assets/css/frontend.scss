@@ -9,8 +9,8 @@
   cursor:pointer;
 
   img {
-    width:106px;
-    margin-top:-38px;
+    width:120px;
+    margin-top:-36px;
   }
 }
 
@@ -26,10 +26,6 @@
     z-index:99;
     padding: 4px 0 0 0;
     background-color:transparent;
-
-    img {
-      margin-top:-40px;
-    }
 
     &:before {
       content:'';
@@ -83,7 +79,7 @@
 
     &.white {
       img {
-        margin-top:10px;
+        margin-top:15px;
       }
       &:before {
         background-color:#fff;

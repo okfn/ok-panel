@@ -21,8 +21,8 @@
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div id="ok-panel" class="closed"><iframe src="//assets.okfn.org/themes/okfn/okf-panel.html" scrolling="no"></iframe></div>
+
+    <div id="ok-panel" class="closed"><div class="container"><iframe src="//okfnlabs.org/ok-panel/panel.html" scrolling="no"></iframe></div></div>
 
     <nav class="navbar navbar-static-top">
       <div class="container">
@@ -65,11 +65,11 @@
           <p>Lastly, there is the HTML. Where and how you add this depends slightly on your website, but the are two basic options.</p>
           <h3>Fixed Position</h3>
           <p>This is probably the most straightforward method, just add the following snippet immediately after the opening <code>&lt;body&gt;</code> tag:</p>
-          <pre><code class="language-markup">&lt;div class="fixed-ok-panel"&gt;&lt;div id="ok-panel" class="closed"&gt;&lt;iframe src="//assets.okfn.org/themes/okfn/okf-panel.html" scrolling="no"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;a class="ok-ribbon" href="https://okfn.org/"&gt;&lt;img src="//okfnlabs.org/ok-panel/assets/images/ok-ribbon.png" alt="Open Knowledge"&gt;&lt;/a&gt;&lt;/div&gt;</code></pre>
+          <pre><code class="language-markup">&lt;div class="fixed-ok-panel"&gt;&lt;div id="ok-panel" class="closed"&gt;&lt;iframe src="//okfnlabs.org/ok-panel/panel.html" scrolling="no"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;a class="ok-ribbon" href="https://okfn.org/"&gt;&lt;img src="//okfnlabs.org/ok-panel/assets/images/ok-ribbon.png" alt="Open Knowledge"&gt;&lt;/a&gt;&lt;/div&gt;</code></pre>
           <p><strong>Note:</strong> this will cause the ribbon to appear in front of whatever is on the page. To avoid this, see below method.</p>
           <h3>Relative Position</h3>
           <p>This will add the ribbon into the flow of the document. First add the following immediately after the opening <code>&lt;body&gt;</code> tag:</p>
-          <pre><code class="language-markup">&lt;div id="ok-panel" class="closed"&gt;&lt;iframe src="//assets.okfn.org/themes/okfn/okf-panel.html" scrolling="no"&gt;&lt;/iframe&gt;&lt;/div&gt;</code></pre>
+          <pre><code class="language-markup">&lt;div id="ok-panel" class="closed"&gt;&lt;iframe src="//okfnlabs.org/ok-panel/panel.html" scrolling="no"&gt;&lt;/iframe&gt;&lt;/div&gt;</code></pre>
           <p>Then add this where you want the ribbon to appear (should be near the top of the page):</p>
           <pre><code class="language-markup">&lt;a class="ok-ribbon" href="https://okfn.org/"&gt;&lt;img src="//okfnlabs.org/ok-panel/assets/images/ok-ribbon.png" alt="Open Knowledge"&gt;&lt;/a&gt;</code></pre>
           <hr>

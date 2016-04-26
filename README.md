@@ -2,7 +2,7 @@
 
 Once applied to your website, the Open Knowledge Ribbon will look like this:
 
-![Screenshot](http://okfnlabs.org/ok-panel/screenshot.png)
+![Screenshot](http://okfnlabs.org/ok-panel/screenshot.png =156)
 
 ## Usage
 

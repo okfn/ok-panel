@@ -3,9 +3,9 @@
 	  Plugin Name: Open Knowledge Panel
 	  Plugin URI: https://github.com/okfn/ok-panel
 	  Version: 2.1.0
-	  Author: Mint Canary
-	  Author URI: http://www.mintcanary.com/
-	  Description: Adds ribbon and dropdown panel to top of site.
+	  Author: Sam Smith
+	  Author URI: http://smth.uk/
+	  Description: Adds an expanding panel to your website, containing links back to Open Knowledge. This replaces the "Open Knowledge Foundation Panel" plugin.
 	  Text Domain: okf-panel
 	  Domain Path: /languages
 	  License: GNU GENERAL PUBLIC LICENSE

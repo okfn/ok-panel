@@ -2,7 +2,7 @@
 /*
 	  Plugin Name: Open Knowledge Panel
 	  Plugin URI: https://github.com/okfn/ok-panel
-	  Version: 2.0.0
+	  Version: 2.1.0
 	  Author: Mint Canary
 	  Author URI: http://www.mintcanary.com/
 	  Description: Adds ribbon and dropdown panel to top of site.

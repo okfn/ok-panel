@@ -16,17 +16,17 @@
 		echo $GLOBALS['okfpanel_iframe'];
 	}
 	function show_okfribbon() {
-		echo $GLOBALS['okfpanel_ribbon'];
+		echo '<div id="ok-panel-wrapper">'.$GLOBALS['okfpanel_ribbon'].'</div>';
 	}
 
 	// Absolute panel
 	function show_okfpanel_absolute() {
-		echo '<div class="absolute-ok-panel">'.$GLOBALS['okfpanel_iframe'].'<div class="container">'.$GLOBALS['okfpanel_ribbon'].'</div></div>';
+		echo '<div id="ok-panel-wrapper" class="absolute-ok-panel">'.$GLOBALS['okfpanel_iframe'].'<div class="container">'.$GLOBALS['okfpanel_ribbon'].'</div></div>';
 	}
 
 	// Fixed panel
 	function show_okfpanel_fixed() {
-		echo '<div class="fixed-ok-panel">'.$GLOBALS['okfpanel_iframe'].'<div class="container">'.$GLOBALS['okfpanel_ribbon'].'</div></div>';
+		echo '<div id="ok-panel-wrapper" class="fixed-ok-panel">'.$GLOBALS['okfpanel_iframe'].'<div class="container">'.$GLOBALS['okfpanel_ribbon'].'</div></div>';
 	}
 
 

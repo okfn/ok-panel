@@ -2,7 +2,7 @@
 /*
 	  Plugin Name: Open Knowledge Panel
 	  Plugin URI: https://github.com/okfn/ok-panel
-	  Version: 2.1.0
+	  Version: 2.1.1
 	  Author: Sam Smith
 	  Author URI: http://smth.uk/
 	  Description: Adds an expanding panel to your website, containing links back to Open Knowledge. This replaces the "Open Knowledge Foundation Panel" plugin.
